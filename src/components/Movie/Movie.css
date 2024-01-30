@@ -1,0 +1,62 @@
+/* Movie.css */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .card {
+    flex-basis: calc(33.3333% - 40px); /* Calculate the width of each card (1/3 of the container) */
+    margin: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .imgcard {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f8f8f8;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .cardtitle {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: blue;
+    text-align: center;
+  }
+  
+  .cardyear {
+    font-size: 1rem;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .yearleft {
+    flex: 1;
+    font-weight: bold;
+    color: #e44d26; /* Orange color */
+  }
+  
+  .runtimeright {
+    flex: 1;
+    text-align: right;
+    color: #2ecc71; /* Green color */
+  }
+  
